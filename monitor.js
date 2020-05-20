@@ -1,19 +1,30 @@
 const axios = require('axios');
 const MongoClient = require('mongodb').MongoClient;
 var moment = require('moment');
-
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 const url = "mongodb://localhost:27017/";
-const WEBHOOK = '<INSERT WEBHOOK HERE>'
+
+
+var WEBHOOK;
 const POLL_INTERVAL = 2500;
 
 var item_data = new Map();
 
-if(!WEBHOOK.includes('discord')) {
-  console.log("Invalid webhook")
-} else {
-  setInterval(poll, POLL_INTERVAL);
-  console.log("Monitoring....")
-}
+rl.question("Enter discord webhook: ", (webhook) => {
+  WEBHOOK = webhook;
+  if(!WEBHOOK.includes('discord')) {
+    console.log("Invalid webhook")
+  } else {
+    setInterval(poll, POLL_INTERVAL);
+    console.log("Monitoring....")
+  }
+})
+
+
 
 
 
