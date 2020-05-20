@@ -11,8 +11,8 @@ Monitors items on supremenewyork.com in a MongoDB to notify users when an item h
 2. `cd` into directory
 3. Run `npm install`
 4. Install and Run [MongoDB](https://docs.mongodb.com/manual/installation/) 
-5. Run `init.js`
-6. Run `monitor.js` 
+5. Run `node init.js`
+6. Run `node monitor.js` 
 7. Observe
 
 ### Customizable
