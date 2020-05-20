@@ -17,4 +17,4 @@ Monitors items on supremenewyork.com in a MongoDB to notify users when an item h
 
 ### Customizable
 - [Discord Webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks?page=1): Notifications will be sent to this webhook.
-- Poll Interval: The rate at which it monitors the supreme items endpoint. HINT: 1000ms = 1 second
+- `POLL_INTERVAL`: The rate at which it monitors the supreme items endpoint. HINT: 1000ms = 1 second
