@@ -25,6 +25,7 @@ axios({
     item_data.set('Shorts', products.Shorts);
     item_data.set('Pants', products.Pants);
     item_data.set('Skate', products.Skate);
+    item_data.set('Tops/Sweaters', products['Tops/Sweaters'])
 
     
 
