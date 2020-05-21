@@ -47,6 +47,7 @@ function poll() {
         item_data.set('shorts', products.Shorts);
         item_data.set('pants', products.Pants);
         item_data.set('skate', products.Skate);
+        item_data.set('tops/sweaters', products['Tops/Sweaters'])
     
         item_data.forEach(function(value, key) {
             value.forEach(function(product) {
