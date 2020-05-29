@@ -29,7 +29,7 @@ rl.question("Enter discord webhook: ", (webhook) => {
 
 
 function poll() {
-    console.log("Monitoring....");
+    console.log("Monitoring.... @" + moment().format('LTS'));
     var d = new Date()
     var date = d.getTime()
     axios({
